@@ -53,3 +53,7 @@ links.forEach((link) => {
     hamburger.classList.remove("toggle");
   });
 });
+
+window.addEventListener('load', function() {
+  document.querySelector('.loading').style.display = 'none';
+});
