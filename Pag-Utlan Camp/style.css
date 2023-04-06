@@ -220,6 +220,21 @@ nav ul li a:hover {
   font-size: 20px;
   margin-top: 20px;
 }
+@media screen and (max-width: 600px) {
+  .hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .hero .button {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}
 
 /* About section styles */
 .about {
@@ -241,6 +256,22 @@ nav ul li a:hover {
 
 .about .button {
   font-size: 20px;
+}
+/* Styles for screens up to 600px wide */
+@media screen and (max-width: 600px) {
+  .about h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .about .button {
+    font-size: 16px;
+  }
 }
 
 /* Accommodations section styles */
@@ -318,38 +349,35 @@ nav ul li a:hover {
   font-size: 28px;
   margin-bottom: 20px;
 }
+/* Styles for screens up to 600px wide */
+@media screen and (max-width: 600px) {
+  .accommodations {
+    padding: 50px 0;
+  }
 
-@media screen and (max-width: 768px) {
   .accommodations h2 {
     font-size: 28px;
     margin-bottom: 20px;
   }
 
   .accommodations li {
-    flex-basis: 45%;
-    margin: 10px;
+    flex-basis: 80%;
+    margin: 20px auto;
+  }
+
+  .accommodations li h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
   }
 
   .accommodations li h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .accommodations h2 {
     font-size: 24px;
     margin-bottom: 15px;
   }
 
-  .accommodations li {
-    flex-basis: 100%;
-    margin: 10px 0;
-  }
-
-  .accommodations li h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
+  .accommodations li .description {
+    padding: 10px;
+    font-size: 16px;
   }
 }
 
@@ -449,7 +477,39 @@ height: 200px;
 font-size: 20px;
 margin-top: 20px;
 }
+@media screen and (min-width: 768px) {
+  .contact {
+    padding: 100px 0;
+  }
 
+  .contact h2 {
+    font-size: 3.6rem;
+    margin-bottom: 30px;
+  }
+
+  .contact form {
+    max-width: 800px;
+  }
+
+  .contact label {
+    font-size: 1.6rem;
+  }
+
+  .contact input[type="text"],
+  .contact input[type="email"],
+  .contact textarea {
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+  }
+
+  .contact textarea {
+    height: 200px;
+  }
+
+  .contact .button {
+    font-size: 1.6rem;
+  }
+}
 
 
 /*More photos style*/
@@ -515,6 +575,28 @@ margin-top: 20px;
 
 .prev {
   left: 0;
+}
+@media only screen and (max-width: 768px) {
+  .more-photos {
+    padding: 30px 0;
+  }
+  
+  .more-photos h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .photo-container img {
+    height: 200px;
+    margin-right: 10px;
+  }
+  
+  .next, .prev {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+  }
 }
 /*Reviews*/
 * {
