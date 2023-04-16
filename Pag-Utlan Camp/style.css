@@ -3,7 +3,9 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  
 }
+
 
 body {
   background-color: #000000;
@@ -25,13 +27,14 @@ button {
   text-transform: uppercase;
   letter-spacing: 2.5px;
   color: #070707;
-  background-color: #009688;
+  background-color: #fff;
   border: none;
   border-radius: 45px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
+  
 }
 
 button:hover {
@@ -98,11 +101,12 @@ button:active {
 
  /* default styles for the nav bar */
  nav {
+  color: #c67a4d;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #fff;
+  background-color: #fcf2dc;
   position: fixed;
   top: 0;
   left: 0;
@@ -111,8 +115,9 @@ button:active {
 }
 
 nav img {
-  height: 50px;
+  height: 65px;
   width: auto;
+  
 }
 
 nav ul {
@@ -159,7 +164,7 @@ nav ul li a:hover {
     position: fixed;
     top: 80px;
     left: 0;
-    background-color: #fff;
+    background-color: #fcf2dc;;
     height: calc(100vh - 80px);
     width: 100%;
     flex-direction: column;
@@ -190,6 +195,9 @@ nav ul li a:hover {
 .hero {
   background-image: linear-gradient(rgba(8, 8, 8, 0.7), rgba(8, 12, 31, 0.7)),
     url(Final_Resources/Pagutlan.JPG);
+  
+  
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -239,17 +247,19 @@ nav ul li a:hover {
 
 /* About section styles */
 .about {
-  background-color: #f1f1f1;
+  background-color: #008185;
   padding: 100px 0;
   text-align: center;
 }
 
 .about h2 {
+  color: #fff;
   font-size: 36px;
   margin-bottom: 30px;
 }
 
 .about p {
+  color: #fff;
   font-size: 24px;
   max-width: 800px;
   margin: 0 auto 30px;
@@ -277,9 +287,10 @@ nav ul li a:hover {
 
 /* Accommodations section styles */
 .accommodations {
-  color: #fff;
+  color: #000000;
   padding: 100px 0;
   text-align: center;
+  background-color: #fcf2dc;
 }
 
 .accommodations h2 {
@@ -322,14 +333,17 @@ nav ul li a:hover {
   left: 0;
   opacity: 0;
   width: 100%;
-  height: 100%;
+  height: 95%;
+  margin-bottom: 10px;
+  border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
   text-align: center;
   padding: 20px;
   box-sizing: border-box;
   transition: opacity 0.3s;
-  z-index: 2; /* added */
+  z-index: 1; /* added */
+  
 }
 
 .accommodations li:hover .description {
@@ -386,6 +400,7 @@ nav ul li a:hover {
 
 /* Activities Section Styles */
 .activities {
+  background-color: #008185;
   color: #fff;
   text-align: center;
   padding: 100px 0;
@@ -438,9 +453,10 @@ nav ul li a:hover {
 
 /* Contact section styles */
 .contact {
-background-color: #fff;
+background-color: #008185;
 padding: 100px 0;
 text-align: center;
+color: #fff;
 }
 
 .contact h2 {
@@ -515,7 +531,7 @@ margin-top: 20px;
 
 /*More photos style*/
 .more-photos {
-  background-color: #f1f1f1;
+  background-color:#fcf2dc;
   padding: 50px 0;
 }
 
@@ -600,6 +616,7 @@ margin-top: 20px;
   }
 }
 /*Reviews*/
+
 * {
   margin: 0;
   padding: 0;
@@ -611,7 +628,7 @@ margin-top: 20px;
 .testimonials {
   font-family: 'Alegreya', serif;
   padding: 40px 0;
-  background: #f1f1f1;
+  background: #fcf2dc;;
   color: #434343;
   text-align: center;
 }
