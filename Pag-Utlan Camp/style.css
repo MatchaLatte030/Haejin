@@ -115,7 +115,7 @@ button:active {
 }
 
 nav img {
-  height: 65px;
+  height: 80px;
   width: auto;
   
 }
@@ -193,8 +193,8 @@ nav ul li a:hover {
 
 /* Hero section styles */
 .hero {
-  background-image: linear-gradient(rgba(8, 8, 8, 0.7), rgba(8, 12, 31, 0.7)),
-    url(Final_Resources/Pagutlan.JPG);
+  background-image: linear-gradient(rgba(8, 8, 8, 0.442), rgba(8, 12, 31, 0.332)),
+    url(Final_Resources/pc.jpg);
   
   
   background-attachment: fixed;
@@ -203,7 +203,7 @@ nav ul li a:hover {
   background-size: cover;
   
   color: #fff;
-  height: 100vh;
+  height: 130vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -247,7 +247,7 @@ nav ul li a:hover {
 
 /* About section styles */
 .about {
-  background-color: #008185;
+  background-color: #38402a;
   padding: 100px 0;
   text-align: center;
 }
@@ -400,7 +400,7 @@ nav ul li a:hover {
 
 /* Activities Section Styles */
 .activities {
-  background-color: #008185;
+  background-color: #38402a;
   color: #fff;
   text-align: center;
   padding: 100px 0;
@@ -453,7 +453,7 @@ nav ul li a:hover {
 
 /* Contact section styles */
 .contact {
-background-color: #008185;
+background-color: #38402a;
 padding: 100px 0;
 text-align: center;
 color: #fff;
@@ -527,6 +527,45 @@ margin-top: 20px;
     font-size: 1.6rem;
   }
 }
+/* MAP style */
+.map {
+  background-color: #38402a;
+  text-align: center;
+  color: #fff;
+}
+
+.map .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.map h2 {
+  flex: 1 1 100%;
+  margin: 0;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.map-container {
+  flex: 1 1 500px;
+  height: 400px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
+
+
 
 
 /*More photos style*/
@@ -698,7 +737,7 @@ max-width: 100%;
 
 /* Footer styles */
 footer {
-background-color: #333;
+background-color: #38402a;
 color: #fff;
 padding: 20px;
 text-align: center;
@@ -721,56 +760,4 @@ text-decoration: none;
 color: #fff;
 }
 
-.loading {
-  --speed-of-animation: 0.9s;
-  --gap: 6px;
-  --first-color: #4c86f9;
-  --second-color: #49a84c;
-  --third-color: #f6bb02;
-  --fourth-color: #f6bb02;
-  --fifth-color: #2196f3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  gap: 6px;
-  height: 100px;
- }
- 
- .loading span {
-  width: 4px;
-  height: 50px;
-  background: var(--first-color);
-  animation: scale var(--speed-of-animation) ease-in-out infinite;
- }
- 
- .loading span:nth-child(2) {
-  background: var(--second-color);
-  animation-delay: -0.8s;
- }
- 
- .loading span:nth-child(3) {
-  background: var(--third-color);
-  animation-delay: -0.7s;
- }
- 
- .loading span:nth-child(4) {
-  background: var(--fourth-color);
-  animation-delay: -0.6s;
- }
- 
- .loading span:nth-child(5) {
-  background: var(--fifth-color);
-  animation-delay: -0.5s;
- }
- 
- @keyframes scale {
-  0%, 40%, 100% {
-   transform: scaleY(0.05);
-  }
- 
-  20% {
-   transform: scaleY(1);
-  }
- }
 
