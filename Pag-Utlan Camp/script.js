@@ -95,29 +95,29 @@ prevBtn1.addEventListener('mousedown', function(e) {
 });
 
 //FOR FORMS
-const form = document.querySelector("form");
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  const name = form.querySelector("#name").value;
-  const email = form.querySelector("#email").value;
-  const message = form.querySelector("#message").value;
-  const url =
-    "https://docs.google.com/forms/d/1kAu_KcQse8DVpU1IZtFcshYqdh73KqDMiAMak30ApGY/prefill";
-  const data = new FormData();
-  data.append("entry.1234567890", name);
-  data.append("entry.0987654321", email);
-  data.append("entry.2468013579", message);
-  fetch(url, {
-    method: "POST",
-    mode: "no-cors",
-    body: data,
-  })
-    .then(() => {
-      alert("Thank you for your message!");
-      form.reset();
-    })
-    .catch((error) => {
-      alert("Oops, something went wrong. Please try again later.");
-      console.error(error);
-    });
-});
+// const form = document.querySelector("form");
+// form.addEventListener("submit", (e) => {
+//   e.preventDefault();
+//   const name = form.querySelector("#name").value;
+//   const email = form.querySelector("#email").value;
+//   const message = form.querySelector("#message").value;
+//   const url =
+//     "https://docs.google.com/forms/d/1kAu_KcQse8DVpU1IZtFcshYqdh73KqDMiAMak30ApGY/prefill";
+//   const data = new FormData();
+//   data.append("entry.1234567890", name);
+//   data.append("entry.0987654321", email);
+//   data.append("entry.2468013579", message);
+//   fetch(url, {
+//     method: "POST",
+//     mode: "no-cors",
+//     body: data,
+//   })
+//     .then(() => {
+//       alert("Thank you for your message!");
+//       form.reset();
+//     })
+//     .catch((error) => {
+//       alert("Oops, something went wrong. Please try again later.");
+//       console.error(error);
+//     });
+// });
