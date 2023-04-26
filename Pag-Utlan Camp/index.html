@@ -139,32 +139,17 @@
     <section id="contact" class="contact">
       <h2>Contact Us</h2>
       <p>Ready to book your stay or have a question for us? Contact us using the form below, and we'll get back to you as soon as possible.</p>
-      <form onsubmit="sendEmail(); reset(); return false;">
+      <form action="script.php" method="POST">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name"><br>
+        <input type="name" id="name" name="name"><br>
         <label for="email">Email:</label>
         <input type="email" id="email" name="email"><br>
         <label for="message">Message:</label>
-        <textarea id="message" name="message"></textarea><br>
+        <textarea id="message" type="message" name="message"></textarea><br>
         <button type="submit">Submit</button>
       </form>
-      <script src="https://smtpjs.com/v3/smtp.js"></script>
-      <script>
-        function sendEmail(){
-          Email.send({
-          SecureToken : "57b8fee8-ca6a-4037-9072-88a66d335e4f",
-          To : 'shee.basiga.swu@phinmaed.com',
-          From : document.getElementById("email").value,
-          Subject : "Customer Inquiry",
-          Body : "Name: " + document.getElementById("name").value
-          + "<br> Email: " + document.getElementById("email").value
-          + "<br> Message: " + document.getElementById("message").value
-      }).then(
-        message => alert(message)
-      );
-        }
-       
-      </script>
+      
+      
     </section>
     
     <footer>

@@ -34,6 +34,29 @@ prevBtn.addEventListener('mousedown', function(e) {
     behavior: 'smooth'
   });
 });
+
+
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const links = document.querySelectorAll(".nav-links li a");
+
+// Toggle the "open" class on the navLinks element when the hamburger menu is clicked
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("open");
+  hamburger.classList.toggle("toggle");
+});
+
+// Remove the "open" class from the navLinks element when a link is clicked
+links.forEach((link) => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("open");
+    hamburger.classList.remove("toggle");
+  });
+});
+
+window.addEventListener('load', function() {
+  document.querySelector('.loading').style.display = 'none';
+});
 // script for devs scroll buttons
 const sliderWrapper1 = document.querySelector('.slider-wrapper1');
 const slider1 = document.querySelector('.slider1');
@@ -69,29 +92,6 @@ prevBtn1.addEventListener('mousedown', function(e) {
     left: sliderWrapper1.scrollLeft - scrollStep,
     behavior: 'smooth'
   });
-});
-
-
-const hamburger = document.querySelector(".hamburger");
-const navLinks = document.querySelector(".nav-links");
-const links = document.querySelectorAll(".nav-links li a");
-
-// Toggle the "open" class on the navLinks element when the hamburger menu is clicked
-hamburger.addEventListener("click", () => {
-  navLinks.classList.toggle("open");
-  hamburger.classList.toggle("toggle");
-});
-
-// Remove the "open" class from the navLinks element when a link is clicked
-links.forEach((link) => {
-  link.addEventListener("click", () => {
-    navLinks.classList.remove("open");
-    hamburger.classList.remove("toggle");
-  });
-});
-
-window.addEventListener('load', function() {
-  document.querySelector('.loading').style.display = 'none';
 });
 
 //FOR FORMS

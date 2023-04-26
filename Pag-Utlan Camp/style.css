@@ -481,7 +481,7 @@ font-size: 20px;
 margin-bottom: 10px;
 }
 
-.contact input[type="text"],
+.contact input[type="name"],
 .contact input[type="email"],
 .contact textarea {
 width: 100%;
@@ -743,8 +743,8 @@ max-width: 100%;
 
 /* Footer styles */
 footer {
-background-color: #38402a;
-color: #fff;
+background-color: #fcf2dc;
+color: #000000;
 padding: 20px;
 text-align: center;
 }
