@@ -139,7 +139,7 @@
     <section id="contact" class="contact">
       <h2>Contact Us</h2>
       <p>Ready to book your stay or have a question for us? Contact us using the form below, and we'll get back to you as soon as possible.</p>
-      <form method="POST" action="https://formspree.io/f/mqkowoyz" >
+      <form onsubmit="sendMail()"; reset(); return fales; >
         <label for="name">Name:</label>
         <input type="name" id="name" name="name"><br>
         <label for="email">Email:</label>
@@ -148,6 +148,21 @@
         <textarea id="message" type="message" name="message"></textarea><br>
         <button type="submit">Submit</button>
       </form>
+      <script>
+     Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "evpa.vergara.swu@phinmaed.com",
+    Password : "E65B5C83C4B77DF279CC1FCADA7A7E46FEBB",
+    To : 'evpa.vergara.swu@phinmaed.com',
+    From : "you@isp.com",
+    Subject : "Resort Inquiry",
+    Body : "Name:" + document.getElementById("name").value
+       + "<br> Email:" + document.getElementById("email").value
+       + "<br> Message:" + document.getElementById("message").value
+     }).then(
+      message => alert(message)
+    );
+      </script>
       
       
     </section>
