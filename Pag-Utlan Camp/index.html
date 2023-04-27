@@ -139,7 +139,7 @@
     <section id="contact" class="contact">
       <h2>Contact Us</h2>
       <p>Ready to book your stay or have a question for us? Contact us using the form below, and we'll get back to you as soon as possible.</p>
-      <form onsubmit="sendMail()"; reset(); return fales; >
+      <form onsubmit="sendMail()"; reset(); return false; >
         <label for="name">Name:</label>
         <input type="name" id="name" name="name"><br>
         <label for="email">Email:</label>
@@ -148,7 +148,9 @@
         <textarea id="message" type="message" name="message"></textarea><br>
         <button type="submit">Submit</button>
       </form>
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
       <script>
+        function sendEmail(){
      Email.send({
     Host : "smtp.elasticemail.com",
     Username : "evpa.vergara.swu@phinmaed.com",
@@ -162,6 +164,7 @@
      }).then(
       message => alert(message)
     );
+          )
       </script>
       
       
