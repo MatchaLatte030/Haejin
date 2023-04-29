@@ -178,7 +178,18 @@
         <textarea id="message" type="message" name="message"></textarea><br>
         <button type="submit">Submit</button>
       </form>
-      
+      <script>
+        function sendEmail(){
+     Email.send({
+    Host : "smtp.elasticemail.com",
+      Username : "vergaraevon@gmail.com",
+      Password : "189548856BDC05F00D02A7CA0A95C0C777C0",
+      To : 'vergaraevon@gmail.com',
+      From : "vergaraevon@gmail.com",
+      Subject : "Resort Inquiry",
+    Body : "Name:" + document.getElementById("name").value
+       + "<br> Email:" + document.getElementById("email").value
+     </script>
       
     </section>
     <footer>
