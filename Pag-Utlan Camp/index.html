@@ -68,7 +68,7 @@
       <ul>
         
         <li><img src="Final_Resources/bike.JPG" alt="Biking"><h3>Biking</h3><p>Rent a bike and hit the trails for a thrilling ride through the beautiful countryside.</p></li>
-        <li><img src="Final_Resources/fishing.JPG" alt="Fishing"><h3>Fishing</h3><p>Cast your line into our stocked fishing pond and try your luck catching bass, catfish, and other freshwater fish. Fishing gear is available for rent, and our staff can provide tips on the best bait and techniques.</p></li>
+        <li><img src="Final_Resources/fishing.JPG" alt="Fishing"><h3>Island Hopping</h3><p>Come! Let's hop on different islets each holding instagram worthy bounties and stop on some diving spots to see the wonderful beauty of our marine life with our safe and fun pump boats.</p></li>
         <li><img src="Final_Resources/kayak2.jpg" alt="Kayaking"><h3>Kayaking</h3><p>Take to the water and explore the nearby lake in a kayak or canoe. Guests can rent kayaks and canoes from the resort and enjoy a peaceful paddle through the scenic waterways.</p></li>
       </ul>
       <a href="#contact" class="button">Contact Us</a>
@@ -169,7 +169,7 @@
     <section id="contact" class="contact">
       <h2>Contact Us</h2>
       <p>Ready to book your stay or have a question for us? Contact us using the form below, and we'll get back to you as soon as possible.</p>
-      <form onsubmit="sendEmail(); reset(); return false;">
+      <form method="POST" action="script.php" >
         <label for="name">Name:</label>
         <input type="name" id="name" name="name"><br>
         <label for="email">Email:</label>
@@ -178,23 +178,8 @@
         <textarea id="message" type="message" name="message"></textarea><br>
         <button type="submit">Submit</button>
       </form>
-      <script src="https://smtpjs.com/v3/smtp.js"></script>
-      <script>
-        function sendEmail(){
-          Email.send({
-          SecureToken : "57b8fee8-ca6a-4037-9072-88a66d335e4f",
-          To : 'shee.basiga.swu@phinmaed.com',
-          From : document.getElementById("email").value,
-          Subject : "Customer Inquiry",
-          Body : "Name: " + document.getElementById("name").value
-          + "<br> Email: " + document.getElementById("email").value
-          + "<br> Message: " + document.getElementById("message").value
-      }).then(
-        message => alert(message)
-      );
-        }
-       
-      </script>
+      
+      
     </section>
     <footer>
       <p>&copy; 2023 Pag-Utlan Camp</p>
