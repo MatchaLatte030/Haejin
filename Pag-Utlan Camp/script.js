@@ -34,30 +34,6 @@ prevBtn.addEventListener('mousedown', function(e) {
     behavior: 'smooth'
   });
 });
-<<<<<<< HEAD
-
-
-const hamburger = document.querySelector(".hamburger");
-const navLinks = document.querySelector(".nav-links");
-const links = document.querySelectorAll(".nav-links li a");
-
-// Toggle the "open" class on the navLinks element when the hamburger menu is clicked
-hamburger.addEventListener("click", () => {
-  navLinks.classList.toggle("open");
-  hamburger.classList.toggle("toggle");
-});
-
-// Remove the "open" class from the navLinks element when a link is clicked
-links.forEach((link) => {
-  link.addEventListener("click", () => {
-    navLinks.classList.remove("open");
-    hamburger.classList.remove("toggle");
-  });
-});
-
-window.addEventListener('load', function() {
-  document.querySelector('.loading').style.display = 'none';
-});
 // script for devs scroll buttons
 const sliderWrapper1 = document.querySelector('.slider-wrapper1');
 const slider1 = document.querySelector('.slider1');
@@ -95,35 +71,6 @@ prevBtn1.addEventListener('mousedown', function(e) {
   });
 });
 
-//FOR FORMS
-// const form = document.querySelector("form");
-// form.addEventListener("submit", (e) => {
-//   e.preventDefault();
-//   const name = form.querySelector("#name").value;
-//   const email = form.querySelector("#email").value;
-//   const message = form.querySelector("#message").value;
-//   const url =
-//     "https://docs.google.com/forms/d/1kAu_KcQse8DVpU1IZtFcshYqdh73KqDMiAMak30ApGY/prefill";
-//   const data = new FormData();
-//   data.append("entry.1234567890", name);
-//   data.append("entry.0987654321", email);
-//   data.append("entry.2468013579", message);
-//   fetch(url, {
-//     method: "POST",
-//     mode: "no-cors",
-//     body: data,
-//   })
-//     .then(() => {
-//       alert("Thank you for your message!");
-//       form.reset();
-//     })
-//     .catch((error) => {
-//       alert("Oops, something went wrong. Please try again later.");
-//       console.error(error);
-//     });
-// });
-=======
-
 
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
@@ -146,4 +93,29 @@ links.forEach((link) => {
 window.addEventListener('load', function() {
   document.querySelector('.loading').style.display = 'none';
 });
->>>>>>> parent of 3180e8a (added new assets)
+//FOR FORMS
+const form = document.querySelector('form');
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const name = form.querySelector('#name').value;
+  const email = form.querySelector('#email').value;
+  const message = form.querySelector('#message').value;
+  const url = 'https://docs.google.com/forms/d/1kAu_KcQse8DVpU1IZtFcshYqdh73KqDMiAMak30ApGY/prefill';
+  const data = new FormData();
+  data.append('entry.1234567890', name);
+  data.append('entry.0987654321', email);
+  data.append('entry.2468013579', message);
+  fetch(url, {
+    method: 'POST',
+    mode: 'no-cors',
+    body: data
+  })
+  .then(() => {
+    alert('Thank you for your message!');
+    form.reset();
+  })
+  .catch((error) => {
+    alert('Oops, something went wrong. Please try again later.');
+    console.error(error);
+  });
+});
