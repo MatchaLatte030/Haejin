@@ -34,6 +34,7 @@ prevBtn.addEventListener('mousedown', function(e) {
     behavior: 'smooth'
   });
 });
+<<<<<<< HEAD
 
 
 const hamburger = document.querySelector(".hamburger");
@@ -121,3 +122,28 @@ prevBtn1.addEventListener('mousedown', function(e) {
 //       console.error(error);
 //     });
 // });
+=======
+
+
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const links = document.querySelectorAll(".nav-links li a");
+
+// Toggle the "open" class on the navLinks element when the hamburger menu is clicked
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("open");
+  hamburger.classList.toggle("toggle");
+});
+
+// Remove the "open" class from the navLinks element when a link is clicked
+links.forEach((link) => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("open");
+    hamburger.classList.remove("toggle");
+  });
+});
+
+window.addEventListener('load', function() {
+  document.querySelector('.loading').style.display = 'none';
+});
+>>>>>>> parent of 3180e8a (added new assets)

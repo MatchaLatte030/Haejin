@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+
+section{
+    background: url('../img/test2.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 120vh;
+    text-align: center;
+}
+.heads{
+    color: #f8f4f4;
+    font-size: 42px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.price-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  @media (max-width: 768px) {
+    .price-list {
+      flex-direction: column;      
+    }
+    
+    .price-item {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  }
+  
+.room-prices {
+    padding: 50px;
+    background-color: #f7f7f7;
+  }
+  
+  .price-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 1rem 1rem ;
+  }
+  
+  .price-item {
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    text-align: center;
+    flex: 1;
+    margin-right: 20px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    border-radius: 5px;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+
+  }
+  
+  
+  .price-item:last-child {
+    margin-right: 0;
+  }
+  .price-list p{
+    font-size: 1.7rem;
+    font-weight: 550;
+  }
+  .price-item h3 {
+    font-size: 2.3rem;
+    margin-bottom: 10px;
+  }
+  
+  .price-item .price {
+    font-size: 36px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  
+  .price-item button {
+    background-color: #0072ff;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .price-item button:hover {
+    background-color:#0072ff;
+  }
+  
+  
+  .price-item:hover {
+    transform: scale(1.05);
+  }
+  
+
+  
+  
+
+.subscribe{
+    text-align: center;
+    padding: 3rem 2rem 2rem 2rem;
+}
+
+.subscribe-box{
+    padding: 10px;
+}
+
+.subscribe-box input{
+    max-width: 300px;
+    width: 65%;
+    padding: 5px 10px;
+    height: 40px;
+}
+
+.subscribe-box button{
+    border: none;
+    background-color: #0072ff;
+    height: 40px;
+    padding: 0 1rem;
+    color: #fff;
+}

@@ -1,0 +1,86 @@
+.contact-main {
+background:url(imgbg/IMG_0323.jpeg) no-repeat ;
+background-size: cover;
+background-attachment: fixed;
+min-height: 90vh;
+ 
+}
+
+
+
+.social-medyas h2{
+    font-size: 45px;
+	text-align: center;
+    justify-content: center;
+    align-items: center;
+	margin-top: 7.4rem;
+	margin-bottom: 2rem;
+	color: #ffffff;
+ }
+
+
+
+.logos{
+	height: 100px;
+	max-width: 500px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+  z-index: 1;
+  margin-top: 3rem;
+  }
+  .icon{
+	width: 80px;
+	height: 80px;
+	border-radius: 80px;
+	background: #fff;
+	margin: 0 10px;
+	text-align: center;
+	font-size: 24px;
+	line-height: 80px;
+	font-family: sans-serif;
+	overflow: hidden;
+	box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.3);
+	transition: all .3s ease-out;
+	z-index: 1;
+  }
+  .icon:hover{
+	width: 300px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	color: #fff;
+  }
+  .icon:hover i{
+	color: #fff;
+  }
+  .icon .fa-facebook{
+	color: #1A6ED8;
+  }
+  .fb:hover{
+	background: #1A6ED8;
+  }
+  .icon .fa-phone{
+	color: #cf12c8; 
+  }
+  .phone:hover{
+	background: #FE0000;
+  }
+  .icon .fa-envelope{
+	color: #c6112c; 
+  }
+  .gmail:hover{
+	background: #d93a5a;
+  }
+  /* responsive */
+  @media only  screen  and (max-width: 768px) {
+	.logos{
+	  font-size: 2em ;
+	  margin: 0 5px;
+	}
+  }
+  
+  
